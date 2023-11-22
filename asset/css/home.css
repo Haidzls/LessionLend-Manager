@@ -64,8 +64,9 @@
 }
 
 .user__avatar img{
-	object-fit: contain;
+	object-fit: cover;
 	height: 80%;
+	width: 40px;
 	border-radius: 50%;
 	align-self: center;
 	margin-right: 8px;
@@ -265,9 +266,13 @@
 	background-color: #3ad43a;
 }
  
+/* .invalid{
+	background-color: #3ad43a;
+} */
+
 .invalid{
 	background-color: #ff3232;
-	color: #fff;
+	color: #fff
 }
 
 

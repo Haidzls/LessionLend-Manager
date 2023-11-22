@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="./asset/css/home.css">
 		<link rel="stylesheet" href="./asset/css/base.css">
+		<link rel="stylesheet" href="./asset/css/room.css">
 		<link rel="stylesheet" href="./asset/css/responsive.css">
 	</head>
 
@@ -50,15 +51,15 @@
 						</div>
 					</li>
 					<li class="sidebar__item">
-						<a href="#" class="sidebar__link sidebar__link--selected">
+						<a href="#" class="sidebar__link ">
 							<i class="fa-solid fa-house"></i>
-							<span class="">Trang chủ</span>
+							<span class="">Mượn thiết bị</span>
 						</a>
 					</li>
 					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
+						<a href="#" class="sidebar__link sidebar__link--selected">
 							<i class="fa-solid fa-house"></i>
-							<span class="">Trang chủ</span>
+							<span class="">Phòng bộ môn</span>
 						</a>
 					</li>
 					<li class="sidebar__item">
@@ -78,38 +79,150 @@
 				<div class="content">
 					<div class="content__header">
 						<p class="content__header__note">
-							Các thiết bị của trường
+							Mượn phòng học bộ môn
 						</p>
 						<div class="content-color-box">
 							<div class="content-color-box--green"></div>
-							<p>Có thể mượn</p>
+							<p>Phòng còn trống</p>
 						</div>
 						<div class="content-color-box">
 							<div class="content-color-box--red"></div>
-							<p>Hiện tại không thể mượn</p>
+							<p>Hiện tại đang có lớp</p>
 						</div>
 					</div>
 
 					<div class="content__device">
-						<table class="device__table">
-							<thead>
-								<tr>
-									<th>Tên thiết bị</th>
-									<th>thạng thái</th>
-									<th>Còn</th>
-									<th>Đơn vị</th>
-									<th>Đăng ký mượn sản phẩm</th>
-								</tr>
-							</thead>
+						<div class="grade">
+							<div class="grade__head">Tầng 3</div>
+							<div class="grade__content">
+								<div class="grade__room">
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
+											<select name="lop" id="lop">
+												<option value="">Lớp mượn</option>
+												<option value="Lop10A">Lớp 10 A</option>
+												<option value="Lop10B">Lớp 10 B</option>
+												<option value="Lop10C">Lớp 10 C</option>
+												<option value="Lop11A">Lớp 11 A</option>
+												<option value="Lop11B">Lớp 11 B</option>
+												<option value="Lop11C">Lớp 11 C</option>
+												<option value="Lop12A">Lớp 12 A</option>
+												<option value="Lop12B">Lớp 12 B</option>
+												<option value="Lop12C">Lớp 12 C</option>
+												<option value="TH">Tin Hoc</option>
+												<option value="SH">Sinh học</option>
+												<option value="AN">Âm Nhạc</option>
+												<option value="HH">Hóa Học</option>
+											  </select>
+											  <select name="tiet" id="tiet">
+												<option value="1">Số tiết</option>
+												<option value="1">1 Tiết</option>
+												<option value="2">2 Tiết</option>
+												<option value="3">3 Tiết</option>
+												<option value="4">4 Tiết</option>
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item grade__room__item--runout">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
+											<select name="lop" id="lop">
+												<option value="">Lớp mượn</option>
+												<option value="Lop10A">Lớp 10 A</option>
+												<option value="Lop10B">Lớp 10 B</option>
+												<option value="Lop10C">Lớp 10 C</option>
+												<option value="Lop11A">Lớp 11 A</option>
+												<option value="Lop11B">Lớp 11 B</option>
+												<option value="Lop11C">Lớp 11 C</option>
+												<option value="Lop12A">Lớp 12 A</option>
+												<option value="Lop12B">Lớp 12 B</option>
+												<option value="Lop12C">Lớp 12 C</option>
+												<option value="TH">Tin Hoc</option>
+												<option value="SH">Sinh học</option>
+												<option value="AN">Âm Nhạc</option>
+												<option value="HH">Hóa Học</option>
+											  </select>
+											  <select name="tiet" id="tiet">
+												<option value="1">Số tiết</option>
+												<option value="1">1 Tiết</option>
+												<option value="2">2 Tiết</option>
+												<option value="3">3 Tiết</option>
+												<option value="4">4 Tiết</option>
+											  </select>
+										</div>
+										<button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
+											<select name="lop" id="lop">
+												<option value="">Lớp mượn</option>
+												<option value="Lop10A">Lớp 10 A</option>
+												<option value="Lop10B">Lớp 10 B</option>
+												<option value="Lop10C">Lớp 10 C</option>
+												<option value="Lop11A">Lớp 11 A</option>
+												<option value="Lop11B">Lớp 11 B</option>
+												<option value="Lop11C">Lớp 11 C</option>
+												<option value="Lop12A">Lớp 12 A</option>
+												<option value="Lop12B">Lớp 12 B</option>
+												<option value="Lop12C">Lớp 12 C</option>
+												<option value="TH">Tin Hoc</option>
+												<option value="SH">Sinh học</option>
+												<option value="AN">Âm Nhạc</option>
+												<option value="HH">Hóa Học</option>
+											  </select>
+											  <select name="tiet" id="tiet">
+												<option value="1">Số tiết</option>
+												<option value="1">1 Tiết</option>
+												<option value="2">2 Tiết</option>
+												<option value="3">3 Tiết</option>
+												<option value="4">4 Tiết</option>
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
+											<select name="lop" id="lop">
+												<option value="">Lớp mượn</option>
+												<option value="Lop10A">Lớp 10 A</option>
+												<option value="Lop10B">Lớp 10 B</option>
+												<option value="Lop10C">Lớp 10 C</option>
+												<option value="Lop11A">Lớp 11 A</option>
+												<option value="Lop11B">Lớp 11 B</option>
+												<option value="Lop11C">Lớp 11 C</option>
+												<option value="Lop12A">Lớp 12 A</option>
+												<option value="Lop12B">Lớp 12 B</option>
+												<option value="Lop12C">Lớp 12 C</option>
+												<option value="TH">Tin Hoc</option>
+												<option value="SH">Sinh học</option>
+												<option value="AN">Âm Nhạc</option>
+												<option value="HH">Hóa Học</option>
+											  </select>
+											  <select name="tiet" id="tiet">
+												<option value="1">Số tiết</option>
+												<option value="1">1 Tiết</option>
+												<option value="2">2 Tiết</option>
+												<option value="3">3 Tiết</option>
+												<option value="4">4 Tiết</option>
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+								</div>
+							</div>
+						</div>
 
-							<tbody>
-								<tr class="valid">
-									<td>Mô hình súng aka cắt bổ</td>
-									<td>Mới</td>
-									<td>7</td>
-									<td>khẩu</td>
-									<td>
-										<form action="" class="">
+						<div class="grade">
+							<div class="grade__head">Tầng 2</div>
+							<div class="grade__content">
+								<div class="grade__room">
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
 											<select name="lop" id="lop">
 												<option value="">Lớp mượn</option>
 												<option value="Lop10A">Lớp 10 A</option>
@@ -125,25 +238,20 @@
 												<option value="SH">Sinh học</option>
 												<option value="AN">Âm Nhạc</option>
 												<option value="HH">Hóa Học</option>
-										  	</select>
-										  	<select name="tiet" id="tiet">
+											  </select>
+											  <select name="tiet" id="tiet">
 												<option value="1">Số tiết</option>
 												<option value="1">1 Tiết</option>
 												<option value="2">2 Tiết</option>
 												<option value="3">3 Tiết</option>
 												<option value="4">4 Tiết</option>
-										  	</select>
-										  	<button type="submit">Đăng ký</button> 
-										</form>
-									</td>
-								</tr>
-								<tr class="valid">
-									<td>Mô hình súng aka cắt bổ ádfsadfsaaâ</td>
-									<td >Mới</td>
-									<td>7</td>
-									<td>khẩu</td>
-									<td>
-										<form action="" class="">
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item grade__room__item--runout">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
 											<select name="lop" id="lop">
 												<option value="">Lớp mượn</option>
 												<option value="Lop10A">Lớp 10 A</option>
@@ -159,25 +267,20 @@
 												<option value="SH">Sinh học</option>
 												<option value="AN">Âm Nhạc</option>
 												<option value="HH">Hóa Học</option>
-										  	</select>
-										  	<select name="tiet" id="tiet">
+											  </select>
+											  <select name="tiet" id="tiet">
 												<option value="1">Số tiết</option>
 												<option value="1">1 Tiết</option>
 												<option value="2">2 Tiết</option>
 												<option value="3">3 Tiết</option>
 												<option value="4">4 Tiết</option>
-										  	</select>
-										  	<button type="submit">Đăng ký</button> 
-										</form>
-									</td>
-								</tr>
-								<tr class="invalid">
-									<td>Mô hình súng aka cắt bổ</td>
-									<td>Mới</td>
-									<td>0</td>
-									<td>khẩu</td>
-									<td>
-										<form action="" class="">
+											  </select>
+										</div>
+										<button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
 											<select name="lop" id="lop">
 												<option value="">Lớp mượn</option>
 												<option value="Lop10A">Lớp 10 A</option>
@@ -193,25 +296,20 @@
 												<option value="SH">Sinh học</option>
 												<option value="AN">Âm Nhạc</option>
 												<option value="HH">Hóa Học</option>
-										  	</select>
-										  	<select name="tiet" id="tiet">
+											  </select>
+											  <select name="tiet" id="tiet">
 												<option value="1">Số tiết</option>
 												<option value="1">1 Tiết</option>
 												<option value="2">2 Tiết</option>
 												<option value="3">3 Tiết</option>
 												<option value="4">4 Tiết</option>
-										  	</select>
-										  	<button type="submit">Đăng ký</button> 
-										</form>
-									</td>
-								</tr>
-								<tr class="valid">
-									<td>Mô hình súng aka cắt bổ</td>
-									<td>Mới</td>
-									<td>7</td>
-									<td>khẩu</td>
-									<td>
-										<form action="" class="">
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
 											<select name="lop" id="lop">
 												<option value="">Lớp mượn</option>
 												<option value="Lop10A">Lớp 10 A</option>
@@ -227,25 +325,28 @@
 												<option value="SH">Sinh học</option>
 												<option value="AN">Âm Nhạc</option>
 												<option value="HH">Hóa Học</option>
-										  	</select>
-										  	<select name="tiet" id="tiet">
+											  </select>
+											  <select name="tiet" id="tiet">
 												<option value="1">Số tiết</option>
 												<option value="1">1 Tiết</option>
 												<option value="2">2 Tiết</option>
 												<option value="3">3 Tiết</option>
 												<option value="4">4 Tiết</option>
-										  	</select>
-										  	<button type="submit">Đăng ký</button> 
-										</form>
-									</td>
-								</tr>
-								<tr class="invalid">
-									<td>Mô hình súng aka cắt bổ</td>
-									<td>Mới</td>
-									<td>0</td>
-									<td>khẩu</td>
-									<td>
-										<form action="" class="">
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="grade">
+							<div class="grade__head">Tầng 1</div>
+							<div class="grade__content">
+								<div class="grade__room">
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
 											<select name="lop" id="lop">
 												<option value="">Lớp mượn</option>
 												<option value="Lop10A">Lớp 10 A</option>
@@ -261,25 +362,20 @@
 												<option value="SH">Sinh học</option>
 												<option value="AN">Âm Nhạc</option>
 												<option value="HH">Hóa Học</option>
-										  	</select>
-										  	<select name="tiet" id="tiet">
+											  </select>
+											  <select name="tiet" id="tiet">
 												<option value="1">Số tiết</option>
 												<option value="1">1 Tiết</option>
 												<option value="2">2 Tiết</option>
 												<option value="3">3 Tiết</option>
 												<option value="4">4 Tiết</option>
-										  	</select>
-										  	<button type="submit">Đăng ký</button> 
-										</form>
-									</td>
-								</tr>
-								<tr class="valid">
-									<td>Mô hình súng aka cắt bổ</td>
-									<td>Mới</td>
-									<td>7</td>
-									<td>khẩu</td>
-									<td>
-										<form action="" class="">
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item grade__room__item--runout">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
 											<select name="lop" id="lop">
 												<option value="">Lớp mượn</option>
 												<option value="Lop10A">Lớp 10 A</option>
@@ -295,25 +391,20 @@
 												<option value="SH">Sinh học</option>
 												<option value="AN">Âm Nhạc</option>
 												<option value="HH">Hóa Học</option>
-										  	</select>
-										  	<select name="tiet" id="tiet">
+											  </select>
+											  <select name="tiet" id="tiet">
 												<option value="1">Số tiết</option>
 												<option value="1">1 Tiết</option>
 												<option value="2">2 Tiết</option>
 												<option value="3">3 Tiết</option>
 												<option value="4">4 Tiết</option>
-										  	</select>
-										  	<button type="submit">Đăng ký</button> 
-										</form>
-									</td>
-								</tr>
-								<tr class="valid">
-									<td>Mô hình súng aka cắt bổ</td>
-									<td>Mới</td>
-									<td>7</td>
-									<td>khẩu</td>
-									<td>
-										<form action="" class="">
+											  </select>
+										</div>
+										<button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
 											<select name="lop" id="lop">
 												<option value="">Lớp mượn</option>
 												<option value="Lop10A">Lớp 10 A</option>
@@ -329,20 +420,49 @@
 												<option value="SH">Sinh học</option>
 												<option value="AN">Âm Nhạc</option>
 												<option value="HH">Hóa Học</option>
-										  	</select>
-										  	<select name="tiet" id="tiet">
+											  </select>
+											  <select name="tiet" id="tiet">
 												<option value="1">Số tiết</option>
 												<option value="1">1 Tiết</option>
 												<option value="2">2 Tiết</option>
 												<option value="3">3 Tiết</option>
 												<option value="4">4 Tiết</option>
-										  	</select>
-										  	<button type="submit">Đăng ký</button> 
-										</form>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+									<form action="" class="grade__room__item">
+										<div class="room__item-name">phòng tin 1</div>
+										<div class="room__item-info">
+											<select name="lop" id="lop">
+												<option value="">Lớp mượn</option>
+												<option value="Lop10A">Lớp 10 A</option>
+												<option value="Lop10B">Lớp 10 B</option>
+												<option value="Lop10C">Lớp 10 C</option>
+												<option value="Lop11A">Lớp 11 A</option>
+												<option value="Lop11B">Lớp 11 B</option>
+												<option value="Lop11C">Lớp 11 C</option>
+												<option value="Lop12A">Lớp 12 A</option>
+												<option value="Lop12B">Lớp 12 B</option>
+												<option value="Lop12C">Lớp 12 C</option>
+												<option value="TH">Tin Hoc</option>
+												<option value="SH">Sinh học</option>
+												<option value="AN">Âm Nhạc</option>
+												<option value="HH">Hóa Học</option>
+											  </select>
+											  <select name="tiet" id="tiet">
+												<option value="1">Số tiết</option>
+												<option value="1">1 Tiết</option>
+												<option value="2">2 Tiết</option>
+												<option value="3">3 Tiết</option>
+												<option value="4">4 Tiết</option>
+											  </select>
+										</div>
+										  <button type="submit">Đăng ký</button> 
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

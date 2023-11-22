@@ -35,11 +35,12 @@
 	font-size: 20px;
 }
 
+
 .grade__room__item--runout{
 	background-color: #ff3232;
 }
 
-.room__item-info select, button{
+.room__item-info select, button, .select-box{
 	padding: 4px;
 	margin: 4px;
 	background-color: #d5e9fe;
@@ -55,11 +56,19 @@
 	cursor: pointer;
 }
 
-.grade__room__item--runout select:hover{
-	cursor: not-allowed;
+
+.select-box{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
 }
 
-.grade__room__item--runout button:hover{
-	cursor: not-allowed;
+
+.grade__room__item--instock .hidden-box1{
+	display: none;
 }
 
+.grade__room__item--runout .hidden-box2{
+	display: none;
+}

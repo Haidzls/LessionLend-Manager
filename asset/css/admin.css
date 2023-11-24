@@ -61,6 +61,7 @@
 	color: #1d8b36;
 	font-size: 16px;
 	color: #fff;
+	border-radius: 5px;
 }
 
 .btn--edit:hover {
